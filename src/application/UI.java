@@ -108,10 +108,11 @@ public class UI {
 		List<ChessPiece> black = captured.stream().filter(x -> x.getColor() == Color.BLACK).collect(Collectors.toList());
 		System.out.println("Captured pieces:");
 		System.out.print("White: ");
-		System.out.println(ANSI_WHITE); //print na cor branca
+		System.out.print(ANSI_WHITE); //print na cor branca
 		System.out.println(Arrays.toString(white.toArray()));
 		System.out.print("Black: ");
-		System.out.println(ANSI_YELLOW); //print na cor amarela (pretas)
+		System.out.print(ANSI_YELLOW); //print na cor amarela (pretas)
 		System.out.println(Arrays.toString(black.toArray()));
+		System.out.print(ANSI_RESET);
 	}
 }
